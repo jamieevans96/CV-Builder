@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import General from './components/General'
+import Work from './components/Work'
+import Education from './components/Education'
+import { Jumbotron } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Jumbotron>
+        <h1 className='display-3 text-center'>CV Builder</h1>
+      </Jumbotron>
+      <General />
+      <Education />
+      <Work />
     </div>
   );
 }
